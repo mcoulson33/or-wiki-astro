@@ -1,15 +1,39 @@
+#local_backend: true
+
 collections:
-  - name: "blog" # Used in routes, e.g., /admin/collections/blog
-    label: "Blog" # Used in the UI
-    folder: "src/content/blog" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields for each document, usually in frontmatter
-      - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Featured Image", name: "thumbnail", widget: "image" }
-      - { label: "Rating (scale of 1-5)", name: "rating", widget: "number" }
-      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "docs"
+    label: "Documentation"
+    folder: "src/content/docs" # Direct connection to Starlight pages
+    create: true
+    format: "frontmatter"
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string", required: true }
+      - { label: "Description", name: "description", widget: "string", required: false }
+      - label: "Template Layout"
+        name: "template"
+        widget: "select"
+        options: ["doc", "splash"]
+        default: "doc"
+        required: false
+      - label: "Sidebar Options"
+        name: "sidebar"
+        widget: "object"
+        required: false
+        fields:
+          - { label: "Label", name: "label", widget: "string", required: false }
+          - { label: "Order Placement", name: "order", widget: "number", required: false }
+          - { label: "Hidden from Menu", name: "hidden", widget: "boolean", default: false, required: false }
+      - { label: "Body Content", name: "body", widget: "markdown", required: true }
 
 media_folder: "src/assets/images" # Location where files will be stored in the repo
 public_folder: "src/assets/images" # The src attribute for uploaded media
+
+backend:
+  name: github
+  repo: mcoulson33/or-wiki-astro
+  branch: main # Branch to update (optional; defaults to master)
+  base_url: https://netlify.com  # Tells Decap to use Netlify's OAuth gateway (maybe this needs to be looked at more?)
+
+# Tell the CMS to look inside the admin folder for config
+cms_config_url: /config.yml

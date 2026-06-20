@@ -20,7 +20,14 @@ export default defineConfig({
 					label: 'Reference',
 					items: [{ autogenerate: { directory: 'reference' } }],
 				},
+				{
+					label: 'Cases',
+					items: [{ autogenerate: { directory: 'cases' } }],
+				},
 			],
 		}),
 	],
+	redirects: {
+    '/admin': '/admin/index.html',
+  },
 });
