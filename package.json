@@ -10,8 +10,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/starlight": "^0.40.0",
-    "astro": "^6.4.5",
+    "24": "^0.0.0",
+    "@astrojs/starlight": "^0.37.7",
+    "astro": "^5.17.2",
     "decap-cms-app": "^3.14.1",
     "sharp": "^0.34.5"
   },
