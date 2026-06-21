@@ -33,7 +33,6 @@ backend:
   name: github
   repo: mcoulson33/or-wiki-astro
   branch: main # Branch to update (optional; defaults to master)
-  base_url: https://netlify.com  # Tells Decap to use Netlify's OAuth gateway (maybe this needs to be looked at more?)
 
 # Tell the CMS to look inside the admin folder for config
 cms_config_url: /config.yml
