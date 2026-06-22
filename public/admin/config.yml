@@ -33,6 +33,3 @@ backend:
   name: github
   repo: mcoulson33/or-wiki-astro
   branch: main # Branch to update (optional; defaults to master)
-
-# Tell the CMS to look inside the admin folder for config
-cms_config_url: /config.yml
