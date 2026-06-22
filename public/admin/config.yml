@@ -24,7 +24,34 @@ collections:
           - { label: "Label", name: "label", widget: "string", required: false }
           - { label: "Order Placement", name: "order", widget: "number", required: false }
           - { label: "Hidden from Menu", name: "hidden", widget: "boolean", default: false, required: false }
-      - { label: "Body Content", name: "body", widget: "markdown", required: true }
+          - { label: "Body Content", name: "body", widget: "markdown", required: true }
+
+  - name: "cases"
+    label: "Cases"
+    folder: "src/content/docs/cases" # Direct connection to Starlight pages
+    create: true
+    format: "frontmatter"
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string", required: true }
+      - { label: "Description", name: "description", widget: "string", required: false }
+      - label: "Template Layout"
+        name: "template"
+        widget: "select"
+        options: ["doc", "splash"]
+        default: "doc"
+        required: false
+      - label: "Sidebar Options"
+        name: "sidebar"
+        widget: "object"
+        required: false
+        fields:
+          - { label: "Label", name: "label", widget: "string", required: false }
+          - { label: "Order Placement", name: "order", widget: "number", required: false }
+          - { label: "Hidden from Menu", name: "hidden", widget: "boolean", default: false, required: false }
+          - { label: "Body Content", name: "body", widget: "markdown", required: true }
+
+      
 
 media_folder: "src/assets/images" # Location where files will be stored in the repo
 public_folder: "src/assets/images" # The src attribute for uploaded media
