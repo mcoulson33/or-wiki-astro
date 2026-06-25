@@ -28,5 +28,5 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           projectName: 'or-wiki-astro'
-          directory: 'dist' # The folder containing your production build files
+          directory: 'dist'
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
