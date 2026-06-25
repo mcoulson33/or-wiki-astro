@@ -15,7 +15,7 @@ collections:
         widget: "select"
         options: ["doc", "splash"]
         default: "doc"
-        required: false
+        required: true
       - label: "Sidebar Options"
         name: "sidebar"
         widget: "object"
@@ -40,16 +40,12 @@ collections:
         widget: "select"
         options: ["doc", "splash"]
         default: "doc"
-        required: false
+        required: true
       - label: "Sidebar Options"
         name: "sidebar"
         widget: "object"
         required: false
-        fields:
-          - { label: "Label", name: "label", widget: "string", required: false }
-          - { label: "Order Placement", name: "order", widget: "number", required: false }
-          - { label: "Hidden from Menu", name: "hidden", widget: "boolean", default: false, required: false }
-          - { label: "Body Content", name: "body", widget: "markdown", required: true }
+      - { label: "Body Content", name: "body", widget: "markdown", required: true }
 
       
 
