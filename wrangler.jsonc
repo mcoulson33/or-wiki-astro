@@ -12,7 +12,7 @@
     "nodejs_compat"
   ],
   "assets": {
-    "binding": "ASSETS",
+    //"binding": "ASSETS",
     "directory": "dist"
   }
 }
