@@ -4,6 +4,7 @@ collections:
   - name: "docs"
     label: "Documentation"
     folder: "src/content/docs" # Direct connection to Starlight pages
+    extension: "mdx"
     create: true
     format: "frontmatter"
     slug: "{{slug}}"
@@ -21,6 +22,7 @@ collections:
   - name: "cases"
     label: "Cases"
     folder: "src/content/docs/cases" # Direct connection to Starlight pages
+    extension: "mdx"
     create: true
     format: "frontmatter"
     slug: "{{slug}}"
