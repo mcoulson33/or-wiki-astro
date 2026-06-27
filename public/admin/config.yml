@@ -12,7 +12,7 @@ collections:
       - { label: "Description", name: "description", widget: "string", required: false }
       - label: "Template Layout"
         name: "template"
-        widget: "hidden"
+        widget: "select"
         options: ["doc", "splash"]
         default: "doc"
         required: true
@@ -27,15 +27,8 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string", required: true }
       - { label: "Description", name: "description", widget: "string", required: false }
-      - label: "Template Layout"
-        name: "template"
-        widget: "hidden"
-        options: ["doc", "splash"]
-        default: "doc"
-        required: true
       - { label: "Body Content", name: "body", widget: "markdown", required: true }
 
-      
 
 media_folder: "src/assets/images" # Location where files will be stored in the repo
 public_folder: "src/assets/images" # The src attribute for uploaded media
