@@ -26,11 +26,11 @@ Will likely use Artiss. Located in the minifridge behind room 3 (left one when l
 
 ## Equipment
 
-Will need pneumatic hoses attached to gas wall outlets in the room.
-Will also need the artiss console.
+- Pneumatic hose(s) attached to gas wall outlets in the room.
+- Artiss console.
 
-Versajet
-TPS
+- Versajet
+- TPS
 
 ## Suture
 
@@ -38,14 +38,14 @@ TPS
 
 ## Meds
 
-Epi
-Mineral Oil
+- Epi
+- Mineral Oil
 
 ## Instruments
 
-Burn Set
-Dermatome
-Mesher
+- Burn Set
+- Dermatome
+- Mesher
 
 ## Position
 
