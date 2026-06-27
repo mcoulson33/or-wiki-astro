@@ -2,7 +2,8 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
-import cloudflare from "@astrojs/cloudflare";
+//For Cloudflare workers
+//import cloudflare from "@astrojs/cloudflare";
 
 export default defineConfig({
     integrations: [
@@ -25,6 +26,6 @@ export default defineConfig({
 			],
 		}),
 	],
-
-    adapter: cloudflare()
+//For Cloudflare workers
+//    adapter: cloudflare()
 });
