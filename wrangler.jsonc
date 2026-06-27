@@ -6,13 +6,15 @@
   "observability": {
     "enabled": true
   },
-  "main": "dist/_worker.js/index.js",
+  //For Workers
+  //"main": "dist/_worker.js/index.js",
   "compatibility_flags": [
     "global_fetch_strictly_public",
     "nodejs_compat"
-  ],
+  ]/*,
+  //For Workers
   "assets": {
-    //"binding": "ASSETS",
+    "binding": "ASSETS",
     "directory": "dist"
-  }
+  }*/
 }
