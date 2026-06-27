@@ -1,6 +1,7 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "or-wiki-astro",
+  "pages_build_output_dir": "./dist",
   "compatibility_date": "2026-06-25",
   "observability": {
     "enabled": true
