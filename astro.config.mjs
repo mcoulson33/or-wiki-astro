@@ -9,7 +9,7 @@ import mdx from '@astrojs/mdx';
 export default defineConfig({
     integrations: [
 		starlight({
-			title: 'My Docs',
+			title: 'Surgery Docs',
 			//social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
 			sidebar: [
 				{
