@@ -24,6 +24,10 @@ export default defineConfig({
 					label: 'Cases',
 					autogenerate: { directory: 'cases' }
 				},
+				{
+					label: 'Products',
+					autogenerate: { directory: 'products' }
+				},
 			],
 		}),
 		mdx()
