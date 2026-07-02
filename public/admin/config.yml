@@ -33,7 +33,7 @@ collections:
       - { label: "Publish Date", name: "pubDate", widget: "dateTime", required: false }
       - { label: "Body Content", name: "body", widget: "markdown", required: true }
 
-- name: "products"
+  - name: "products"
     label: "Products"
     folder: "src/content/docs/products" # Direct connection to Starlight pages
     extension: "mdx"
